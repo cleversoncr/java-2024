@@ -1,8 +1,10 @@
 package br.com.cursojsf;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 
 @ManagedBean(name = "pessoaBean")
+@RequestScoped
 public class PessoaBean {
 
   private String nome;
@@ -23,5 +25,4 @@ public class PessoaBean {
   public void setSobrenome(String sobrenome) {
     this.sobrenome = sobrenome;
   }
-
 }

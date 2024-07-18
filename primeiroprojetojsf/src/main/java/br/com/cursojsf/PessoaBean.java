@@ -1,28 +1,31 @@
 package br.com.cursojsf;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
+import java.io.Serializable;
+import jakarta.inject.Named;
+import jakarta.enterprise.context.RequestScoped;
 
-@ManagedBean(name = "pessoaBean")
+@Named("pessoaBean")
 @RequestScoped
-public class PessoaBean {
+public class PessoaBean implements Serializable {
 
-  private String nome;
-  private String sobrenome;
+    private static final long serialVersionUID = 1L;
 
-  public String getNome() {
-    return nome;
-  }
+    private String nome;
+    private String sobrenome;
 
-  public void setNome(String nome) {
-    this.nome = nome;
-  }
+    public String getNome() {
+        return nome;
+    }
 
-  public String getSobrenome() {
-    return sobrenome;
-  }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-  public void setSobrenome(String sobrenome) {
-    this.sobrenome = sobrenome;
-  }
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
 }

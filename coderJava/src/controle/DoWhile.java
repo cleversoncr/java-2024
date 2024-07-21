@@ -6,7 +6,7 @@ public class DoWhile {
   public static void main(String[] args) {
     Scanner entrada = new Scanner(System.in);
 
-    String texto = "";
+    String texto = "por favor";
 
     do {
       System.out.println("Você precisa falar as palavras mágicas...");

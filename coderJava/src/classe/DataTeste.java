@@ -14,7 +14,12 @@ public class DataTeste {
     d2.mes = "Setembro";
     d2.ano = 2001;
 
-    System.out.printf("Hoje é %d de %s de %d\n", d1.dia, d1.mes, d1.ano);
-    System.out.printf("No dia %d de %s de %d ocorreu o atendado terrorista nos EUA", d2.dia, d2.mes, d2.ano);
+//    System.out.printf("Hoje é %d de %s de %d\n", d1.dia, d1.mes, d1.ano);
+//    System.out.printf("No dia %d de %s de %d ocorreu o atendado terrorista nos EUA", d2.dia, d2.mes, d2.ano);
+
+    String dataFormatada1 = d1.obterDataFormatada();
+
+    System.out.println(dataFormatada1);
+    System.out.println(d2.obterDataFormatada());
   }
 }

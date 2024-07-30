@@ -12,10 +12,16 @@ public class Data {
     ano = 1970;
   }
 
-  Data(int diaInicial, String mesInicial, int anoInicial) {
-    dia = diaInicial;
-    mes = mesInicial;
-    ano = anoInicial;
+//  Data(int diaInicial, String mesInicial, int anoInicial) {
+//    dia = diaInicial;
+//    mes = mesInicial;
+//    ano = anoInicial;
+//  }
+
+  Data(int dia, String mes, int ano) {
+    this.dia = dia;
+    this.mes = mes;
+    this.ano = ano;
   }
 
   String obterDataFormatada() {
